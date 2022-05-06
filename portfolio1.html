@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" 
+    crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleprojeto1.css">
+    <title>Julia Carvalho</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="jclogo1.png" width="15%" alt="Logo Julia Carvalho"> 
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://www.github.com/jcarvx">github</a>&nbsp|
+            </li>
+            <li>
+                <a href="mailto:juliacarvalhox@gmail.com">email</a>&nbsp|
+            </li>
+            <li>
+                <a href="https://wa.me/5521972423464">me liga</a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1> 
+                    <!-- LINK PARA >>HOME<< QUE ESTÁ DIRECIONADO PARA O ARQUIVO -->
+                    <a href="file:///C:/Users/juuli/Desktop/projetos/portfolio%20projeto%20css.html?">Julia Carvalho</a>
+                </h1>
+                <h5> Web Development Student </h5>
+            </div>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-angles-down"></i>
+            </div>
+            <div style="display:none;" id="about">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Vero magni ex accusantium veritatis deleniti placeat ad voluptatum, 
+                    sed sapiente neque molestias omnis, laboriosam voluptates temporibus! 
+                    Inventore impedit dolorum alias non!
+                </p>
+            </div>
+            <div class="form">
+                <div>
+                    <p>deixe seu contato:</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="E-mail">
+                    <button>Enviar!</button>
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <script>
+        function displayAbout(){
+            // var arrow = document.getElementById('animation');
+            // arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
